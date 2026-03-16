@@ -63,3 +63,12 @@ lerna-debug.log*
 *.tmp
 *.temp
 .cache/
+
+# Scripts output (keep screenshots for reference)
+scripts/output/assets/
+scripts/output/site-inventory.json
+scripts/output/design-tokens.json
+scripts/output/.DS_Store
+
+# Generated/extracted configs
+tailwind.config.extracted.js
