@@ -29,7 +29,14 @@ export default function Home() {
       <ElectricalServiceJsonLd />
       <Hero
         title="Electrical Experts in Hemel Hempstead"
-        description="Named after the Gaelic god of thunder, Taranis Electrical provides top-quality electrical services for both commercial and domestic clients. With over 10 years experience, we are known for our reliability and outstanding service. NAPIT-approved."
+        description={`Named after the Gaelic god of thunder,
+
+Taranis Electrical provides top-quality electrical services for both commercial and domestic clients.
+
+With over 10 years experience, we are known for our reliability and outstanding service.
+
+NAPIT-approved.`}
+        ctaHref="#enquiry"
       />
 
       <EnquiryForm />
@@ -46,8 +53,8 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="contact" className="py-0">
-        <div className="h-[400px] w-full">
+      <Section id="contact" className="py-0 relative">
+        <div className="relative h-[400px] w-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39571.0!2d-0.47!3d51.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876444b0e7e2e3b%3A0x4e7b5c5e4e6a5c5e!2sHemel%20Hempstead!5e0!3m2!1sen!2suk!4v1"
             width="100%"
@@ -58,22 +65,29 @@ export default function Home() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Taranis Electrical location"
           />
-        </div>
-      </Section>
 
-      <Section>
-        <SectionHeading
-          title="Contact us"
-          centered
-        />
-        <div className="max-w-md mx-auto space-y-4 text-center">
-          <p className="text-neutral-700">Hemel Hempstead, UK</p>
-          <a href="mailto:taraniselectrical@outlook.com" className="block text-primary hover:underline">
-            taraniselectrical@outlook.com
-          </a>
-          <a href="tel:07925423673" className="block text-primary hover:underline">
-            07925423673
-          </a>
+          {/* Overlay contact info on map */}
+          <div className="absolute left-0 top-0 bottom-0 w-full md:w-auto bg-white/95 p-8 md:p-12 flex flex-col justify-center">
+            <h1 className="text-2xl lg:text-3xl font-extrabold text-primary mb-8">Contact us</h1>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-neutral-700">Hemel Hempstead, UK</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <a href="mailto:taraniselectrical@outlook.com" className="text-primary hover:underline break-all">
+                  taraniselectrical@outlook.com
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <a href="tel:07925423673" className="text-primary hover:underline">
+                  07925423673
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 

@@ -10,6 +10,21 @@ const testimonials = [
     role: 'Residential Customer',
     text: 'Liam is a professional and personable electrician. You feel safe in his presence which is very important if you\'re a single person. He arrived on time carried out a very thorough, safe job and leaves the job area tidy. You have the confidence he gives you to know that the job you\'ve asked.',
   },
+  {
+    name: 'Mikaela skinner',
+    role: 'Residential Customer',
+    text: 'Liam did a fabulous job updating over 30 spot lights, removing old fire hoods & replacing with modern fire rated units. Liam was thorough & made sure everything was clean & tidy after. The lights look amazing. Liam came up with a great lighting plan for the downstairs loo. Thank you!!',
+  },
+  {
+    name: 'Steve Davidson',
+    role: 'Residual customer',
+    text: 'Taranis quickly repaired faulty cabling into a fusebox and improved the lighting in the garage. Great service and competitive pricing. I would happily recommend Taranis to others for their electrical needs.',
+  },
+  {
+    name: 'Phil Williams- Rootz',
+    role: 'Commercial Customer',
+    text: 'Liam has carried out various electrical projects for us at the cafe over many years. We have always been very happy with his work, he is highly effcient, clean and tidy. We are very happy to recommend him to others.',
+  },
 ]
 
 export function TestimonialCarousel() {

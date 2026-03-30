@@ -5,7 +5,7 @@ import { Section, SectionHeading } from '@/components/content/section-heading'
 
 export function EnquiryForm() {
   return (
-    <Section>
+    <Section id="enquiry">
       <SectionHeading
         title="How can we help?"
         centered

@@ -16,7 +16,7 @@ export function Hero({
   ctaHref = '#contact',
 }: HeroProps) {
   return (
-    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
+    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-start overflow-hidden">
       {/* Background image with gradient overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -26,13 +26,13 @@ export function Hero({
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/0 to-transparent" />
 
-      <Container className="relative z-10" maxWidth="container">
-        <div className="max-w-full lg:max-w-[500px]">
-          <h1 className="text-3xl lg:text-5xl font-bold leading-tight mb-6 text-white">
+      <Container className="relative z-10 w-full mt-[112px]" maxWidth="container">
+        <div className="max-w-full lg:max-w-[500px] mr-auto">
+          <h1 className="text-3xl lg:text-5xl font-bold leading-tight mb-6 text-white text-left">
             {title}
           </h1>
 
-          <p className="text-lg text-white/80 mb-8 leading-relaxed">
+          <p className="text-lg text-white/80 mb-8 leading-relaxed text-left whitespace-pre-line">
             {description}
           </p>
 
