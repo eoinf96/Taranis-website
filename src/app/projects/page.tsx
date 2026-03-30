@@ -60,10 +60,9 @@ export default function ProjectsPage() {
     <>
       <Hero
         title="Our Latest Projects"
-        subtitle="Case Studies"
-        description="Explore our recent electrical installations across the UK. From residential solar installations to commercial EV charging hubs."
-        ctaPrimary={{ text: 'Get Quote for Your Project', href: '/contact' }}
-        ctaSecondary={{ text: 'View All Services', href: '/services' }}
+        description="Explore our recent electrical installations across the UK."
+        ctaText="Get Quote for Your Project"
+        ctaHref="/contact"
       />
 
       <Section>

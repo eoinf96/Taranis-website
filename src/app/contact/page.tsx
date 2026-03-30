@@ -46,10 +46,9 @@ export default function ContactPage() {
     <>
       <Hero
         title="Get In Touch"
-        subtitle="Contact Us"
-        description="Ready to start your electrical project? Get in touch today for a free, no-obligation quote and consultation."
-        ctaPrimary={{ text: 'Call Now: 07123 456 789', href: 'tel:+447123456789' }}
-        ctaSecondary={{ text: 'Send Email', href: 'mailto:info@taraniselectrical.co.uk' }}
+        description="Ready to start your electrical project? Get in touch today for a free, no-obligation quote."
+        ctaText="Call Now: 07925 423 673"
+        ctaHref="tel:+447925423673"
       />
 
       <Section>

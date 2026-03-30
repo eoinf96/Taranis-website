@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  /* Base colors from extracted site */
-  --color-primary-50: #f8fafc;
-  --color-primary-100: #f1f5f9;
-  --color-primary-500: rgb(13, 110, 253);
-  --color-primary-600: #0c7beb;
-  --color-primary-900: #1e293b;
-  
-  --color-secondary-400: rgb(222, 135, 63);
-  --color-secondary-500: rgb(220, 53, 69);
-  
+  /* Primary accent: orange from target site */
+  --color-primary-50: #fef7f0;
+  --color-primary-100: #fdebd6;
+  --color-primary-500: rgb(222, 135, 63);
+  --color-primary-600: rgb(200, 115, 45);
+  --color-primary-900: rgb(120, 65, 20);
+
+  /* Secondary: red accent from target site */
+  --color-secondary-400: rgb(220, 53, 69);
+  --color-secondary-500: rgb(200, 40, 55);
+
+  /* Neutrals */
   --color-neutral-50: rgb(249, 249, 249);
   --color-neutral-100: rgb(248, 249, 250);
   --color-neutral-200: rgb(245, 245, 245);
@@ -21,13 +23,14 @@
   --color-neutral-700: rgb(33, 37, 41);
   --color-neutral-800: rgb(0, 0, 0);
   --color-neutral-900: rgb(0, 0, 0);
-  
+
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #3b82f6;
 
-  --background: #ffffff;
+  /* Body: white background, dark text */
+  --background: rgb(255, 255, 255);
   --foreground: rgb(33, 37, 41);
 }
 
@@ -36,6 +39,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--color-primary-500);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-600: var(--color-primary-600);
   --color-secondary: var(--color-secondary-400);
   --color-muted: var(--color-neutral-100);
   --color-border: var(--color-neutral-300);
@@ -60,15 +65,14 @@
   --radius-xl: 0.75rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode disabled - target site is light-only */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
