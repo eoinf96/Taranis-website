@@ -60,14 +60,7 @@ export default function ServicesPage() {
     <>
       <Hero
         title="Professional Electrical Services"
-        subtitle="Comprehensive Solutions"
-        description="From modern energy solutions like EV charging and solar installations to traditional electrical work. All services delivered by NICEIC approved contractors."
-        features={[
-          'NICEIC Approved Contractor',
-          'All Work Guaranteed', 
-          'Free Quotes & Surveys',
-          'Emergency Call Out Available'
-        ]}
+        description="From modern energy solutions to traditional electrical work. All services delivered by NICEIC approved contractors."
       />
 
       <Section>

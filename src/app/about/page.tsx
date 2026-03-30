@@ -36,10 +36,9 @@ export default function AboutPage() {
     <>
       <Hero
         title="About Taranis Electrical"
-        subtitle="Professional & Trusted"
-        description="We&apos;re a team of qualified electricians providing professional electrical services across the UK. From renewable energy installations to traditional electrical work."
-        ctaPrimary={{ text: 'Get Free Quote', href: '/contact' }}
-        ctaSecondary={{ text: 'View Our Services', href: '/services' }}
+        description="We're a team of qualified electricians providing professional electrical services across the UK."
+        ctaText="Get Free Quote"
+        ctaHref="/contact"
       />
 
       <Section>

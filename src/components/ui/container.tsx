@@ -2,18 +2,19 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '7xl' | 'full'
+  maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '7xl' | 'full' | 'container'
 }
 
 const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
-  ({ className, maxWidth = '7xl', children, ...props }, ref) => {
+  ({ className, maxWidth = 'container', children, ...props }, ref) => {
     const maxWidthClasses = {
       sm: 'max-w-sm',
-      md: 'max-w-md', 
+      md: 'max-w-md',
       lg: 'max-w-lg',
       xl: 'max-w-xl',
       '2xl': 'max-w-2xl',
       '7xl': 'max-w-7xl',
+      container: 'max-w-[1140px]',
       full: 'max-w-full'
     }
 
