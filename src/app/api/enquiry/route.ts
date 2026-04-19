@@ -27,6 +27,11 @@ function checkRateLimit(ip: string): boolean {
   return true
 }
 
+// Export for testing
+export function clearRateLimitForTesting() {
+  rateLimitMap.clear()
+}
+
 export async function POST(request: NextRequest) {
   try {
     // Verify Content-Type
