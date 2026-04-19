@@ -243,31 +243,31 @@ describe('validateEnquiry', () => {
 
   describe('missing required fields', () => {
     it('should reject missing name', () => {
-      const { name, ...dataWithoutName } = validData
+      const { name: _name, ...dataWithoutName } = validData
       const result = validateEnquiry(dataWithoutName)
       expect(result.success).toBe(false)
     })
 
     it('should reject missing email', () => {
-      const { email, ...dataWithoutEmail } = validData
+      const { email: _email, ...dataWithoutEmail } = validData
       const result = validateEnquiry(dataWithoutEmail)
       expect(result.success).toBe(false)
     })
 
     it('should reject missing phone', () => {
-      const { phone, ...dataWithoutPhone } = validData
+      const { phone: _phone, ...dataWithoutPhone } = validData
       const result = validateEnquiry(dataWithoutPhone)
       expect(result.success).toBe(false)
     })
 
     it('should reject missing address', () => {
-      const { address, ...dataWithoutAddress } = validData
+      const { address: _address, ...dataWithoutAddress } = validData
       const result = validateEnquiry(dataWithoutAddress)
       expect(result.success).toBe(false)
     })
 
     it('should reject missing description', () => {
-      const { description, ...dataWithoutDescription } = validData
+      const { description: _description, ...dataWithoutDescription } = validData
       const result = validateEnquiry(dataWithoutDescription)
       expect(result.success).toBe(false)
     })

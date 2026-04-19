@@ -1,4 +1,4 @@
-import { chromium, Browser, Page } from 'playwright'
+import { chromium, Browser } from 'playwright'
 import { promises as fs } from 'fs'
 import path from 'path'
 import { URL } from 'url'
@@ -7,7 +7,7 @@ interface PageData {
   url: string
   title: string
   html: string
-  computedStyles: any[]
+  computedStyles: Record<string, unknown>[]
   images: string[]
   fonts: string[]
   screenshots: {
@@ -61,7 +61,7 @@ class SiteCrawler {
 
       // Extract computed styles for design tokens
       const computedStyles = await page.evaluate(() => {
-        const styles: any[] = []
+        const styles: Record<string, unknown>[] = []
         const elements = document.querySelectorAll('*')
         
         elements.forEach((el) => {
@@ -117,7 +117,7 @@ class SiteCrawler {
                 }
               }
             })
-          } catch (e) {
+          } catch {
             // Skip cross-origin stylesheets
           }
         })
@@ -234,7 +234,7 @@ class SiteCrawler {
       try {
         const filename = path.basename(new URL(imageUrl).pathname) || 'image.jpg'
         await this.downloadAsset(imageUrl, filename)
-      } catch (error) {
+      } catch {
         console.warn(`Skipping invalid image URL: ${imageUrl}`)
       }
     }
