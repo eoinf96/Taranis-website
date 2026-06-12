@@ -7,11 +7,10 @@ import { Container } from '@/components/ui/container'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/#services' },
-  { name: 'Our work', href: '/#gallery' },
-  { name: 'Testimonials', href: '/#testimonials' },
   { name: 'Contact us', href: '/#enquiry' },
+  { name: 'Our work', href: '/#gallery' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Testimonials', href: '/#testimonials' },
 ]
 
 export function Header() {
