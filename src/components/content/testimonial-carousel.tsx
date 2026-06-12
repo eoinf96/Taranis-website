@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     name: 'Steve Davidson',
-    role: 'Residual customer',
+    role: 'Residential Customer',
     text: 'Taranis quickly repaired faulty cabling into a fusebox and improved the lighting in the garage. Great service and competitive pricing. I would happily recommend Taranis to others for their electrical needs.',
   },
   {

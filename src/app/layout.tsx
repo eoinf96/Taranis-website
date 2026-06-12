@@ -9,20 +9,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Taranis Electrical - Professional Electrical Services",
-  description: "Professional electrical services across the UK. EV charging, solar PV, battery storage, domestic and commercial electrical work. Licensed, insured, and certified.",
-  keywords: "electrical services, electrician, EV charging, solar PV, battery storage, domestic electrical, commercial electrical, EICR, UK",
+  title: "Taranis Electrical - Electrician in Hemel Hempstead",
+  description: "NAPIT-approved electrician based in Hemel Hempstead. Domestic and commercial installations, rewires, fuse board upgrades, lighting, sockets, and maintenance contracts. Over 10 years experience.",
+  keywords: "electrician, Hemel Hempstead, electrical services, domestic electrician, commercial electrician, rewire, fuse board, consumer unit, NAPIT, Hertfordshire",
   authors: [{ name: "Taranis Electrical" }],
   openGraph: {
-    title: "Taranis Electrical - Professional Electrical Services",
-    description: "Professional electrical services across the UK. EV charging, solar PV, battery storage, domestic and commercial electrical work.",
+    title: "Taranis Electrical - Electrician in Hemel Hempstead",
+    description: "NAPIT-approved electrician based in Hemel Hempstead. Domestic and commercial installations, rewires, fuse board upgrades and more.",
     type: "website",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taranis Electrical - Professional Electrical Services",
-    description: "Professional electrical services across the UK. EV charging, solar PV, battery storage, domestic and commercial electrical work.",
+    title: "Taranis Electrical - Electrician in Hemel Hempstead",
+    description: "NAPIT-approved electrician based in Hemel Hempstead. Domestic and commercial installations, rewires, fuse board upgrades and more.",
   }
 };
 
