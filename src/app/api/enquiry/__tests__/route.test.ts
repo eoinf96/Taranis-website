@@ -33,13 +33,13 @@ describe('POST /api/enquiry', () => {
     mockResendSend.mockResolvedValue({
       data: { id: 'test-email-id' },
       error: null,
-    } as any)
+    } as unknown as Awaited<ReturnType<typeof resend.emails.send>>)
 
     // Set test environment variable
     process.env.ENQUIRY_EMAIL = 'test@example.com'
   })
 
-  const createRequest = (body: any, headers: Record<string, string> = {}) => {
+  const createRequest = (body: Record<string, unknown>, headers: Record<string, string> = {}) => {
     return new NextRequest('http://localhost:3000/api/enquiry', {
       method: 'POST',
       headers: {
@@ -128,7 +128,7 @@ describe('POST /api/enquiry', () => {
 
   describe('validation errors', () => {
     it('should reject enquiry with missing name', async () => {
-      const { name, ...invalidEnquiry } = validEnquiry
+      const { name: _name, ...invalidEnquiry } = validEnquiry
       const request = createRequest(invalidEnquiry)
       const response = await POST(request)
       const data = await response.json()
@@ -233,7 +233,7 @@ describe('POST /api/enquiry', () => {
       mockResendSend.mockResolvedValue({
         data: null,
         error: { message: 'API Error', name: 'ResendError' },
-      } as any)
+      } as unknown as Awaited<ReturnType<typeof resend.emails.send>>)
 
       const request = createRequest(validEnquiry)
       const response = await POST(request)
