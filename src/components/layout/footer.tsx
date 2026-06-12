@@ -12,7 +12,7 @@ export function Footer() {
             <div>
               <div className="bg-white p-4 inline-block">
                 <img
-                  src="https://s3-us-west-1.amazonaws.com/public.tradehq.com/production/website/e75ea9ef-b396-4b1d-97af-5a636136fbd1/published/logo"
+                  src="/logo.jpg"
                   alt="Taranis Electrical Logo"
                   className="w-[126px] h-[80px] object-contain"
                 />

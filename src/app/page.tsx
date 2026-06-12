@@ -15,11 +15,11 @@ import {
 } from 'lucide-react'
 
 const services = [
-  { title: 'Domestic and Commercial Installations', icon: Building },
-  { title: 'Full or Partial Rewires', icon: Cable },
-  { title: 'Extra Lighting and Sockets', icon: Lightbulb },
-  { title: 'Fuse Board Upgrade', icon: ShieldCheck },
-  { title: 'Maintenance Contracts', icon: Wrench },
+  { title: 'Domestic and Commercial Installations', description: 'Full electrical installations for homes and businesses, new builds and fit-outs.', icon: Building },
+  { title: 'Full or Partial Rewires', description: 'Complete rewires or targeted updates to bring your wiring up to current standards.', icon: Cable },
+  { title: 'Extra Lighting and Sockets', description: 'Additional points added wherever you need them, neatly and safely.', icon: Lightbulb },
+  { title: 'Fuse Board Upgrade', description: 'Modern consumer unit replacement to improve safety and meet current regulations.', icon: ShieldCheck },
+  { title: 'Maintenance Contracts', description: 'Scheduled maintenance packages for commercial clients to keep installations safe and compliant.', icon: Wrench },
 ]
 
 export default function Home() {
@@ -100,11 +100,11 @@ NAPIT-approved.`}
           {services.map((service) => {
             const Icon = service.icon
             return (
-              <div key={service.title} className="flex items-center gap-4">
-                <Icon className="w-6 h-6 text-primary flex-shrink-0" />
+              <div key={service.title} className="flex items-start gap-4">
+                <Icon className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h2 className="text-base font-semibold text-primary">{service.title}</h2>
-                  <div className="text-neutral-500">-</div>
+                  <p className="text-neutral-500 text-sm mt-0.5">{service.description}</p>
                 </div>
               </div>
             )

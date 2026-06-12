@@ -7,10 +7,11 @@ import { Container } from '@/components/ui/container'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Contact us', href: '#enquiry' },
-  { name: 'Our work', href: '#gallery' },
-  { name: 'Services', href: '#services' },
-  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Our work', href: '/#gallery' },
+  { name: 'Testimonials', href: '/#testimonials' },
+  { name: 'Contact us', href: '/#enquiry' },
 ]
 
 export function Header() {
@@ -23,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <img
-              src="https://s3-us-west-1.amazonaws.com/public.tradehq.com/production/website/e75ea9ef-b396-4b1d-97af-5a636136fbd1/published/logo"
+              src="/logo.jpg"
               alt="Taranis Electrical Logo"
               className="w-[126px] h-[80px] object-contain"
             />
