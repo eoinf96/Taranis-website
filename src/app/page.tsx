@@ -65,7 +65,7 @@ NAPIT-approved.`}
 
           {/* Overlay contact info on map */}
           <div className="absolute left-0 top-0 bottom-0 w-full md:w-auto bg-white/95 p-8 md:p-12 flex flex-col justify-center">
-            <h1 className="text-2xl lg:text-3xl font-extrabold text-primary mb-8">Contact us</h1>
+            <h2 className="text-2xl lg:text-3xl font-extrabold text-primary mb-8">Contact us</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />

@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { Container } from '@/components/ui/container'
 
@@ -22,10 +23,13 @@ export function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <img
+            <Image
               src="/logo.jpg"
               alt="Taranis Electrical Logo"
-              className="w-[126px] h-[80px] object-contain"
+              width={126}
+              height={80}
+              className="object-contain"
+              priority
             />
           </Link>
 

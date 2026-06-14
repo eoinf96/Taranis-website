@@ -21,7 +21,7 @@ export function Hero({
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://s3-us-west-1.amazonaws.com/public.tradehq.com/production/website/e75ea9ef-b396-4b1d-97af-5a636136fbd1/published/hero)'
+          backgroundImage: 'url(/hero.jpg)'
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/0 to-transparent" />
