@@ -4,6 +4,8 @@ import * as React from 'react'
 import { Section, SectionHeading } from '@/components/content/section-heading'
 import { EnquirySubmissionResponse } from '@/types/enquiry'
 
+const MIN_DESCRIPTION_LENGTH = 10
+
 export function EnquiryForm() {
   const [formData, setFormData] = React.useState({
     name: '',
@@ -63,6 +65,13 @@ export function EnquiryForm() {
     setIsSubmitting(true)
     setSubmitStatus('idle')
     setErrorMessage('')
+
+    if (formData.description.length < MIN_DESCRIPTION_LENGTH) {
+      setSubmitStatus('error')
+      setErrorMessage(`Job description must be at least ${MIN_DESCRIPTION_LENGTH} characters.`)
+      setIsSubmitting(false)
+      return
+    }
 
     try {
       // Convert files to base64
@@ -222,6 +231,9 @@ export function EnquiryForm() {
               disabled={isSubmitting}
               className="w-full rounded border border-neutral-300 px-4 py-2 text-sm text-neutral-700 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary resize-vertical disabled:bg-neutral-100 disabled:cursor-not-allowed"
             />
+            <p className={`text-xs mt-1 text-right ${formData.description.length < MIN_DESCRIPTION_LENGTH ? 'text-red-500' : 'text-neutral-400'}`}>
+              {formData.description.length} / {MIN_DESCRIPTION_LENGTH} minimum characters
+            </p>
           </div>
 
           {/* File Upload */}
