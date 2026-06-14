@@ -3,6 +3,7 @@ import { EnquiryForm } from '@/components/content/enquiry-form'
 import { TestimonialCarousel } from '@/components/content/testimonial-carousel'
 import { Section, SectionHeading } from '@/components/content/section-heading'
 import { LocalBusinessJsonLd, ElectricalServiceJsonLd } from '@/components/seo/json-ld'
+import { InstagramFeed } from '@/components/content/instagram-feed'
 import {
   Building,
   Cable,
@@ -46,11 +47,7 @@ NAPIT-approved.`}
           title="Our work"
           centered
         />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-            <div key={i} className="aspect-square bg-neutral-200 rounded"></div>
-          ))}
-        </div>
+        <InstagramFeed />
       </Section>
 
       <Section id="contact" className="py-0 relative">
