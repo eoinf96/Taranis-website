@@ -6,22 +6,21 @@ export default function TermsPage() {
     <div className="py-16">
       <Container maxWidth="2xl">
         <div className="prose prose-neutral max-w-none">
-          <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
+          <h1 className="text-3xl font-bold mb-6">Terms &amp; Conditions</h1>
           <p className="text-neutral-600 mb-6">
-            <strong>Effective Date:</strong> {new Date().toLocaleDateString('en-GB')}
+            <strong>Effective Date:</strong> 1 June 2025
           </p>
-          
+
           <h2 className="text-2xl font-semibold mt-8 mb-4">1. Services</h2>
           <p>
             Taranis Electrical provides professional electrical services including but not limited to:
           </p>
           <ul>
-            <li>EV charging point installation</li>
-            <li>Solar PV system installation</li>
-            <li>Battery storage system installation</li>
-            <li>Domestic and commercial electrical work</li>
-            <li>Electrical testing and certification</li>
-            <li>Emergency electrical services</li>
+            <li>Domestic and commercial electrical installations</li>
+            <li>Full and partial rewires</li>
+            <li>Extra lighting and socket installation</li>
+            <li>Fuse board and consumer unit upgrades</li>
+            <li>Electrical maintenance contracts</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">2. Quotations</h2>
@@ -42,13 +41,13 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">4. Warranties</h2>
           <ul>
-            <li>We provide a 12-month workmanship warranty on all installations</li>
+            <li>We provide a workmanship warranty on all installations</li>
             <li>Manufacturer warranties apply to all equipment and materials</li>
             <li>Warranties do not cover damage due to misuse or normal wear and tear</li>
             <li>Warranty claims must be reported promptly</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">5. Health & Safety</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">5. Health &amp; Safety</h2>
           <ul>
             <li>All work is carried out in accordance with current regulations and standards</li>
             <li>We maintain comprehensive public liability insurance</li>
@@ -58,7 +57,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">6. Limitation of Liability</h2>
           <p>
-            Our liability is limited to the value of the work performed. We are not liable for 
+            Our liability is limited to the value of the work performed. We are not liable for
             consequential damages, loss of profits, or indirect losses.
           </p>
 
@@ -70,35 +69,29 @@ export default function TermsPage() {
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">8. Compliance</h2>
-          <p>
-            All work is carried out in compliance with:
-          </p>
+          <p>All work is carried out in compliance with:</p>
           <ul>
             <li>BS 7671 IET Wiring Regulations (18th Edition)</li>
             <li>Part P Building Regulations</li>
-            <li>Relevant British and European Standards</li>
-            <li>Local authority requirements</li>
+            <li>NAPIT standards and requirements</li>
+            <li>Relevant British Standards</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">9. Dispute Resolution</h2>
           <p>
-            Any disputes will be resolved through negotiation. If necessary, disputes will be 
+            Any disputes will be resolved through negotiation. If necessary, disputes will be
             subject to the jurisdiction of English courts.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">10. Contact Information</h2>
-          <p>
-            For questions about these terms and conditions:
-          </p>
+          <p>For questions about these terms and conditions:</p>
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:info@taraniselectrical.co.uk">info@taraniselectrical.co.uk</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+447123456789">07123 456 789</a></li>
+            <li><strong>Email:</strong> <a href="mailto:taraniselectrical@outlook.com">taraniselectrical@outlook.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:07925423673">07925 423 673</a></li>
           </ul>
 
           <div className="mt-12 pt-8 border-t border-neutral-200">
-            <p className="text-neutral-600">
-              <Link href="/" className="text-primary hover:underline">← Back to Home</Link>
-            </p>
+            <Link href="/" className="text-primary hover:underline">← Back to Home</Link>
           </div>
         </div>
       </Container>

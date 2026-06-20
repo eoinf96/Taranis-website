@@ -8,9 +8,9 @@ export default function PrivacyPage() {
         <div className="prose prose-neutral max-w-none">
           <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
           <p className="text-neutral-600 mb-6">
-            <strong>Effective Date:</strong> {new Date().toLocaleDateString('en-GB')}
+            <strong>Effective Date:</strong> 1 June 2025
           </p>
-          
+
           <h2 className="text-2xl font-semibold mt-8 mb-4">1. Information We Collect</h2>
           <p>
             When you contact us or request our services, we may collect the following information:
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">4. Data Security</h2>
           <p>
-            We implement appropriate security measures to protect your personal information against unauthorized access, 
+            We implement appropriate security measures to protect your personal information against unauthorised access,
             alteration, disclosure, or destruction.
           </p>
 
@@ -62,8 +62,8 @@ export default function PrivacyPage() {
             If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:
           </p>
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:info@taraniselectrical.co.uk">info@taraniselectrical.co.uk</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+447123456789">07123 456 789</a></li>
+            <li><strong>Email:</strong> <a href="mailto:taraniselectrical@outlook.com">taraniselectrical@outlook.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:07925423673">07925 423 673</a></li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">7. Changes to This Policy</h2>
@@ -72,9 +72,7 @@ export default function PrivacyPage() {
           </p>
 
           <div className="mt-12 pt-8 border-t border-neutral-200">
-            <p className="text-neutral-600">
-              <Link href="/" className="text-primary hover:underline">← Back to Home</Link>
-            </p>
+            <Link href="/" className="text-primary hover:underline">← Back to Home</Link>
           </div>
         </div>
       </Container>

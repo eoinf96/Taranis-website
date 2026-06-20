@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react'
 import { Container } from '@/components/ui/container'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export function Footer() {
   return (
@@ -11,10 +13,12 @@ export function Footer() {
             {/* Logo */}
             <div>
               <div className="bg-white p-4 inline-block">
-                <img
+                <Image
                   src="/logo.jpg"
                   alt="Taranis Electrical Logo"
-                  className="w-[126px] h-[80px] object-contain"
+                  width={126}
+                  height={80}
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -53,6 +57,13 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
+          </div>
+        </div>
+        <div className="border-t border-white/20 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-white/60 text-xs">
+          <span>© {new Date().getFullYear()} Taranis Electrical. All rights reserved.</span>
+          <div className="flex gap-4">
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms &amp; Conditions</Link>
           </div>
         </div>
       </Container>
