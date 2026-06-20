@@ -144,7 +144,7 @@ export async function POST(request: NextRequest) {
     const recipientEmail = process.env.ENQUIRY_EMAIL || 'taraniselectrical@outlook.com'
 
     const result = await resend.emails.send({
-      from: 'Taranis Electrical <onboarding@resend.dev>',
+      from: 'Taranis Electrical <noreply@taraniselectrical.co.uk>',
       to: recipientEmail,
       replyTo: data.email,
       subject: `New Enquiry from ${data.name}`,
